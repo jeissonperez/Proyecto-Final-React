@@ -1,0 +1,55 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 6rem;
+  color: white;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #3C3D3D;
+  justify-content: center;
+  align-items: center;
+  /* Blanco semitransparente */
+}
+
+.navbar a {
+  position: relative;
+  color: rgba(255, 255, 255, 0.747);
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 1rem 0;
+  /* Altura adecuada */
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: -27px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00c48c;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.navbar a.active::after {
+  width: 100%;
+}
+
+.navbar.scroll {
+  background-color: rgba(40, 40, 40, 0.9)
+    /* Más oscuro al hacer scroll */
+}
