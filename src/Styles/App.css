@@ -1,0 +1,40 @@
+/* Reset básico para mantener consistencia entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente y fondo general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilo global para los enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Para asegurarse de que las imágenes no excedan el ancho de su contenedor */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Clase global para la app */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Por si quieres agregar espacio entre secciones */
+section {
+  padding: 40px 20px;
+}
+
+
